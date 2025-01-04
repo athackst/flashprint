@@ -34,5 +34,5 @@ jobs:
           file: Dockerfile
           context: .
           tags: ${{ vars.DOCKERHUB_USERNAME}}/flashprint:latest
-          cache-from: gha
-          cache-to: gha
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
