@@ -1,4 +1,4 @@
-name: Update Readme
+name: Docker README
 # Update the readme file for docker images when the description changes and is merged into main.
 on:
   push:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  readme:
+  update:
     runs-on: ubuntu-latest
     name: Push README to Docker Hub
     steps:
